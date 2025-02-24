@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<section class="relative w-dvw h-dvh bg-sunrise overflow-hidden">
+	<section class="relative w-dvw h-[300dvh] bg-sunrise overflow-hidden">
 		<svg
 			class="fill-egg w-[125%] -rotate-[15deg] absolute -top-[122dvh] -left-25"
 			viewBox="0 0 1203 862"
@@ -13,8 +13,17 @@ import Layout from "../layouts/Layout.astro";
 				d="M1202.44 396.851C1202.44 469.658 1191.13 532.557 1168.52 587.646C1145.98 642.704 1116.55 689.935 1080.25 728.791C1043.9 767.582 1002.01 798.338 954.424 819.638C906.838 840.89 858.122 853.347 808.261 856.026C665.454 863.723 522.309 863.448 379.519 855.17C261.756 848.296 169.214 804.567 101.7 735.778C34.1373 666.44 0.541527 576.69 0.525391 461.751C0.525391 388.992 11.8047 326.383 34.3955 271.956C57.0025 217.657 86.4512 170.959 122.726 132.49C159.048 94.0528 200.954 63.4907 248.557 42.1907C296.11 20.9554 344.487 8.53038 393.606 5.86789C536.412 -1.87754 679.574 -1.63547 822.364 6.59405C941.547 13.5327 1034.59 57.1975 1101.8 125.567C1168.97 194.518 1202.44 283.332 1202.44 396.851Z"
 			></path>
 		</svg>
-		<header class="relative z-10">
-			<img class="w-32 mx-22 my-8" src="../../public/logo.png" alt="" />
+		<header class="z-10 fixed">
+			<button
+				class="cursor-pointer fixed z-20 right-20 top-15 bg-sunrise py-4 px-6 text-egg rounded-3xl rounded-br-4xl rounded-tl-4xl -tracking-tighter"
+			>
+				Menu
+			</button>
+			<div class="w-fit mx-22 my-8">
+				<a href="/">
+					<img class="w-32" src="../../public/logo.png" alt="" />
+				</a>
+			</div>
 		</header>
 	</section>
 </Layout>

@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/tilt-neon':
+        specifier: ^5.1.1
+        version: 5.1.1
+      '@fontsource/lilita-one':
+        specifier: ^5.1.1
+        version: 5.1.1
       '@tailwindcss/vite':
         specifier: ^4.0.8
         version: 4.0.8(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1))
@@ -206,6 +212,12 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/tilt-neon@5.1.1':
+    resolution: {integrity: sha512-xN7n5HN+VlQOcNL5KSy68CQj8sCf0CSn1CVyUG59mLXcevJehIdVT5JBSouMmNunOCyoLZGqg5PfVUsXfAJrMg==}
+
+  '@fontsource/lilita-one@5.1.1':
+    resolution: {integrity: sha512-loE+VF9tbhIbJ2fVRpl4XkxVj6C9WNiiV++sYKYs9aqUf8NjlymqMjca83KNDYjA1EGqK6toqHEXSU9Bn+vSCw==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1784,6 +1796,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.24.2':
     optional: true
+
+  '@fontsource-variable/tilt-neon@5.1.1': {}
+
+  '@fontsource/lilita-one@5.1.1': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
