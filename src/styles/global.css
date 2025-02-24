@@ -1,1 +1,6 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme {
+    --color-sunrise: #ff2e1e;
+    --color-egg: #fbed4f;
+}
