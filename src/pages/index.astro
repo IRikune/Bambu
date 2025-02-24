@@ -3,9 +3,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<section class="relative w-dvw h-[300dvh] bg-sunrise overflow-hidden">
+	<section class="relative w-dvw h-dvh bg-sunrise overflow-hidden flex">
 		<svg
-			class="fill-egg w-[125%] -rotate-[15deg] absolute -top-[122dvh] -left-25"
+			class="fill-egg w-395 -rotate-[15deg] absolute -top-[122dvh] -left-25"
 			viewBox="0 0 1203 862"
 			xmlns="http://www.w3.org/2000/svg"
 		>
@@ -15,15 +15,32 @@ import Layout from "../layouts/Layout.astro";
 		</svg>
 		<header class="z-10 fixed">
 			<button
-				class="cursor-pointer fixed z-20 right-20 top-15 bg-sunrise py-4 px-6 text-egg rounded-3xl rounded-br-4xl rounded-tl-4xl -tracking-tighter"
+				class="cursor-pointer fixed z-20 right-20 top-15 bg-sunrise py-4 px-6 text-egg rounded-3xl rounded-br-4xl rounded-tl-4xl -tracking-tighter hover:-translate-y-1 transition duration-300"
 			>
 				Menu
 			</button>
 			<div class="w-fit mx-22 my-8">
 				<a href="/">
-					<img class="w-32" src="../../public/logo.png" alt="" />
+					<img
+						class="w-30 hover:scale-[102%] transition duration-300"
+						src="../../public/logo.png"
+						alt="Bambu Logo"
+					/>
 				</a>
 			</div>
 		</header>
+		<div class="z-10 mx-auto mt-25 -translate-x-40">
+			<img src="../../public/japan.svg" alt="Bambu Japan" class="w-38" />
+		</div>
+		<div class="absolute">
+			<img
+				src="../../public/cola.avif"
+				alt="Bambu Cola"
+				class="relative w-24 z-20 top-55 left-40"
+			/>
+		</div>
+		<h1 class="text-egg text-7xl w-[12ch] absolute bottom-20 left-20">
+			Una experiencia para amantes de la comida asiática
+		</h1>
 	</section>
 </Layout>
